@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class ContactusService {
 
   constructor() { }
+
+  getContactusData():string{
+    return "Niranjana Murthy, 0479281010, niranjanamurthy@gmail.com";
+  }
 }

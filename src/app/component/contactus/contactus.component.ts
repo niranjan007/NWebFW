@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContactusService } from '../../services/contactus.service';
 
 @Component({
   selector: 'app-contactus',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactusComponent implements OnInit {
 
-  constructor() { }
+  contactusPageData:string;
+
+  constructor(private contactusService:ContactusService) { }
 
   ngOnInit() {
+    this.contactusPageData = this.contactusService.getContactusData();
   }
 
 }

@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class ServicesService {
 
   constructor() { }
+
+  getServiceData():string{
+    return "Welcome to services page, Page is under construction";
+  }
 }

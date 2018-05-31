@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class TestimonialsService {
 
   constructor() { }
+
+  getTestimonialData():string{
+    return "This is testimonial page and its being constructed by experts";
+  }
 }

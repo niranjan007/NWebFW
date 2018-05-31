@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TestimonialsService } from '../../services/testimonials.service';
 
 @Component({
   selector: 'app-testimonials',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestimonialsComponent implements OnInit {
 
-  constructor() { }
+  testimonialPageData:string;
+
+  constructor(private testimonialService:TestimonialsService) { }
 
   ngOnInit() {
+    this.testimonialPageData = this.testimonialService.getTestimonialData();
   }
 
 }
