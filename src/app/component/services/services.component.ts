@@ -8,14 +8,12 @@ import { ServicesService } from '../../services/services.service';
 })
 export class ServicesComponent implements OnInit {
 
-  servicePageData:string;
+  servicesPageData:string;
 
-  constructor(private servicesService: ServicesService) {
-    
-   }
+  constructor(private servicesService: ServicesService) { }
 
   ngOnInit() {
-    this.servicePageData = this.servicesService.getServiceData();
+    this.servicesPageData = this.servicesService.getServiceData();
   }
 
 }

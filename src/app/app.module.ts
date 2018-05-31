@@ -9,7 +9,9 @@ import { TestimonialsComponent } from './component/testimonials/testimonials.com
 import { ContactusComponent } from './component/contactus/contactus.component';
 import { ErrorComponent } from './component/error/error.component';
 import { RouterModule } from '@angular/router';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { AppRoutingModule } from './/app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
